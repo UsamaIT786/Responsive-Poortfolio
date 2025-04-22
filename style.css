@@ -255,6 +255,12 @@
       flex-direction: column;
       text-align: center;
     }
+      .nav-links li a {
+          
+flex-direction: column;
+
+      }
+  
   
     .contact-form textarea {
       grid-column: span 1;
