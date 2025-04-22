@@ -251,13 +251,14 @@
   }
   
   @media screen and (max-width: 768px) {
-    .hero-content, .about-container .navbar {
+    .hero-content, .about-container  {
       flex-direction: column;
       text-align: center;
     }
-      .nav-links li a {
+     .navbar, .nav-links li a {
           
 flex-direction: column;
+         gap:5px
 
       }
   
