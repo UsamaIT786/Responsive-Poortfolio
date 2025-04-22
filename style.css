@@ -277,13 +277,13 @@
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
     padding: 20px 5%;
   }
 
   .nav-links {
-    flex-direction: row;
+    flex-direction: column;
     gap: 15px;
   }
 
