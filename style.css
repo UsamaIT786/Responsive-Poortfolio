@@ -251,7 +251,7 @@
   }
   
   @media screen and (max-width: 768px) {
-    .hero-content, .about-container {
+    .hero-content, .about-container .navbar {
       flex-direction: column;
       text-align: center;
     }
