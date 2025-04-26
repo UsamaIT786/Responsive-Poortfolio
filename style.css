@@ -29,6 +29,103 @@
     font-size:40px;
     font-weight: bold;
   }
+/* Navbar - Mobile Screens Par Bhi Always Row */
+.navbar {
+  display: flex;
+  flex-direction: row !important; /* Force row on all screens */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #1f1f1f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  display: flex !important;       /* Always row */
+  flex-direction: row !important; /* Prevent column stack */
+  gap: 30px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+/* Ensure nav links are properly spaced even on small screens */
+.nav-links li a {
+  font-size: 0.95rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .nav-links {
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .services, .portfolio, .contact {
+    padding: 60px 5%;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form textarea {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 30px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2, .hero-text h3 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .hero-img img,
+  .about-container img {
+    width: 160px;
+  }
+}
+
   
   .logo span {
     color: #00f0ff;
