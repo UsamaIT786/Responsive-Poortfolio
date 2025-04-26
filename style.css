@@ -253,7 +253,7 @@
   /* Responsive Styles */
 @media (max-width: 1024px) {
   .hero-content, .about-container {
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
   }
 
@@ -274,6 +274,7 @@
     width: 100%;
   }
 }
+
 
 @media (max-width: 768px) {
   .navbar {
@@ -327,5 +328,6 @@
     width: 160px;
   }
 }
+
 
   
